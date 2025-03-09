@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-09T20:57:48 IST" name="Default suite" finished-at="2025-03-09T20:59:26 IST" duration-ms="98215">
+  <suite started-at="2025-03-09T21:15:31 IST" name="Default suite" finished-at="2025-03-09T21:16:05 IST" duration-ms="34218">
     <groups>
     </groups>
-    <test started-at="2025-03-09T20:57:48 IST" name="Default test" finished-at="2025-03-09T20:59:26 IST" duration-ms="98215">
-      <class name="automationBlogSpot.HandlingNormalTables">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingNormalTables@175c2241]" started-at="2025-03-09T20:57:48 IST" name="setUp" finished-at="2025-03-09T20:59:24 IST" duration-ms="95928" status="PASS">
+    <test started-at="2025-03-09T21:15:31 IST" name="Default test" finished-at="2025-03-09T21:16:05 IST" duration-ms="34218">
+      <class name="automationBlogSpot.HandlingPaginationTables">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingPaginationTables@62379589]" started-at="2025-03-09T21:15:31 IST" name="setUp" finished-at="2025-03-09T21:15:44 IST" duration-ms="13006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="basicTableOperations()[pri:1, instance:automationBlogSpot.HandlingNormalTables@175c2241]" started-at="2025-03-09T20:59:24 IST" name="basicTableOperations" finished-at="2025-03-09T20:59:24 IST" duration-ms="184" status="PASS">
+        <test-method signature="checkThePagesClickCkeckBoxes()[pri:0, instance:automationBlogSpot.HandlingPaginationTables@62379589]" started-at="2025-03-09T21:15:44 IST" name="checkThePagesClickCkeckBoxes" finished-at="2025-03-09T21:16:05 IST" duration-ms="20669" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basicTableOperations -->
-        <test-method signature="printTableData()[pri:2, instance:automationBlogSpot.HandlingNormalTables@175c2241]" started-at="2025-03-09T20:59:24 IST" name="printTableData" finished-at="2025-03-09T20:59:25 IST" duration-ms="1045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printTableData -->
-        <test-method signature="getBookAuhter()[pri:3, instance:automationBlogSpot.HandlingNormalTables@175c2241]" started-at="2025-03-09T20:59:25 IST" name="getBookAuhter" finished-at="2025-03-09T20:59:26 IST" duration-ms="322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getBookAuhter -->
-        <test-method signature="sumOfAllBooksPrice()[pri:4, instance:automationBlogSpot.HandlingNormalTables@175c2241]" started-at="2025-03-09T20:59:26 IST" name="sumOfAllBooksPrice" finished-at="2025-03-09T20:59:26 IST" duration-ms="260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sumOfAllBooksPrice -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingNormalTables@175c2241]" started-at="2025-03-09T20:59:26 IST" name="tearDown" finished-at="2025-03-09T20:59:26 IST" duration-ms="374" status="PASS">
+        </test-method> <!-- checkThePagesClickCkeckBoxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingPaginationTables@62379589]" started-at="2025-03-09T21:16:05 IST" name="tearDown" finished-at="2025-03-09T21:16:05 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automationBlogSpot.HandlingNormalTables -->
+      </class> <!-- automationBlogSpot.HandlingPaginationTables -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
