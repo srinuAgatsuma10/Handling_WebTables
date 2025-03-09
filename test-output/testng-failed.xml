@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverUniversity.HandlingNormalTable">
+      <class name="webDriverUniversity.HandlingMultipleTables">
         <methods>
           <include name="tearDown"/>
-          <include name="getLastNames"/>
           <include name="setUp"/>
+          <include name="printDataInConsole"/>
         </methods>
-      </class> <!-- webDriverUniversity.HandlingNormalTable -->
+      </class> <!-- webDriverUniversity.HandlingMultipleTables -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
