@@ -25,7 +25,7 @@ public class HandlingNormalTable {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://webdriveruniversity.com/Data-Table/index.html#");
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 
 	}
 
