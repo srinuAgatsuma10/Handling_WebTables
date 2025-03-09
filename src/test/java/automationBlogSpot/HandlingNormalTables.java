@@ -8,6 +8,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
 public class HandlingNormalTables {
+	
+	/* Test Cases
+	 * 1. Perform Basic operations on table (Get Row and Column Size, Read data from Specific row and column
+	 * 2. Read the data form all the rows and columns
+	 * 3. Print book names whose author is Mukesh 
+	 * 4. Find total price of all books */
 
 	WebDriver driver;
 
@@ -20,6 +26,7 @@ public class HandlingNormalTables {
 		driver.manage().window().minimize();
 	}
 
+	// 1. Perform Basic operations on table (Get Row and Column Size, Read data from Specific row and column	
 	@Test(priority = 1)
 	public void basicTableOperations() {
 
@@ -35,11 +42,12 @@ public class HandlingNormalTables {
 		String data_roc1 = driver.findElement(By.xpath("//table[@name=\"BookTable\"]//tr[3]//td[3]")).getText();
 		System.out.println("Data in 3th row and 3st col :" + data_roc1);
 	}
-
+	
+	
+	// 2. Read the data form all the rows and columns
 	@Test(priority = 2)
 	public void printTableData() {
-
-		// 4)Read the data form all the rows and columns
+		
 		int row_size = driver.findElements(By.xpath("//table[@name=\"BookTable\"]//tr")).size();
 		int col_size = driver.findElements(By.xpath("//table[@name=\"BookTable\"]//th")).size();
 		for (int ro = 2; ro <= row_size; ro++) {
@@ -52,10 +60,12 @@ public class HandlingNormalTables {
 			System.out.println();
 		}
 	}
-
+	
+	
+	// 3. Print book names whose author is mukesh
 	@Test(priority = 3)
 	public void getBookAuhter() {
-		// 5)Print book names whose author is mukesh
+		
 		int row_size = driver.findElements(By.xpath("//table[@name=\"BookTable\"]//tr")).size();
 		for (int a = 2; a <= row_size; a++) {
 			String author = driver.findElement(By.xpath("//table[@name='BookTable']//tr[" + a + "]//td[2]")).getText();
@@ -67,9 +77,11 @@ public class HandlingNormalTables {
 		}
 	}
 
+	
+	// 4. Find total price of all books
 	@Test(priority = 4)
 	public void sumOfAllBooksPrice() {
-		// 6)Find total price of all books
+		
 		int row_size = driver.findElements(By.xpath("//table[@name=\"BookTable\"]//tr")).size();
 		int sum = 0;
 		for (int b = 2; b <= row_size; b++) {
