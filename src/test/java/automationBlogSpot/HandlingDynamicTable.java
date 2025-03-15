@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class HandlingDynamicTable {
@@ -50,16 +51,25 @@ public class HandlingDynamicTable {
 	@Test
 	public void firefoxDiscSpace() {
 		String tableValue = driver.findElement(By.xpath("")).getText();
-		String descValue = driver.findElement(By.xpath("")).getText();
+		String descValue = driver.findElement(By.xpath("//strong[@class='chrome-cpu']")).getText();
 	}
 	
 	@Test
 	public void testMethod() {
-		for(int i =0;i<=5;i++) {
+		int i;
+		int j;
+		String descValue = driver.findElement(By.xpath("//strong[@class='chrome-cpu']")).getText();
+		for( i =1;i<=5;i++) {
 			String headText = driver.findElement(By.xpath("//table[@id=\"taskTable\"]//thead//tr//th["+i+"]")).getText();
 			String name = driver.findElement(By.xpath("//table[@id='taskTable']//tbody//tr[1]//td["+i+"]")).getText();
 			if(headText.equals("CPU (%)") && name.equals("Chrome")) {
-				// Need to Implement...
+				for(j=1;j<=5;j++) {
+					String cellData = driver.findElement(By.xpath("//table[@id='taskTable']//tbody//tr["+j+"]//td["+i+"]")).getText();
+					System.out.println(cellData);
+					if(cellData.equals(descValue)) {
+						Assert.assertTrue(false);
+					}
+				}
 			}
 		}
 	}

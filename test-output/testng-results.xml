@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-09T21:15:31 IST" name="Default suite" finished-at="2025-03-09T21:16:05 IST" duration-ms="34218">
+  <suite started-at="2025-03-15T19:57:10 IST" name="Default suite" finished-at="2025-03-15T19:57:25 IST" duration-ms="15177">
     <groups>
     </groups>
-    <test started-at="2025-03-09T21:15:31 IST" name="Default test" finished-at="2025-03-09T21:16:05 IST" duration-ms="34218">
-      <class name="automationBlogSpot.HandlingPaginationTables">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingPaginationTables@62379589]" started-at="2025-03-09T21:15:31 IST" name="setUp" finished-at="2025-03-09T21:15:44 IST" duration-ms="13006" status="PASS">
+    <test started-at="2025-03-15T19:57:10 IST" name="Default test" finished-at="2025-03-15T19:57:25 IST" duration-ms="15177">
+      <class name="automationBlogSpot.HandlingDynamicTable">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingDynamicTable@303cf2ba]" started-at="2025-03-15T19:57:10 IST" name="setUp" finished-at="2025-03-15T19:57:24 IST" duration-ms="14160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkThePagesClickCkeckBoxes()[pri:0, instance:automationBlogSpot.HandlingPaginationTables@62379589]" started-at="2025-03-09T21:15:44 IST" name="checkThePagesClickCkeckBoxes" finished-at="2025-03-09T21:16:05 IST" duration-ms="20669" status="PASS">
+        <test-method signature="testMethod()[pri:0, instance:automationBlogSpot.HandlingDynamicTable@303cf2ba]" started-at="2025-03-15T19:57:24 IST" name="testMethod" finished-at="2025-03-15T19:57:25 IST" duration-ms="542" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkThePagesClickCkeckBoxes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingPaginationTables@62379589]" started-at="2025-03-09T21:16:05 IST" name="tearDown" finished-at="2025-03-09T21:16:05 IST" duration-ms="463" status="PASS">
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingDynamicTable@303cf2ba]" started-at="2025-03-15T19:57:25 IST" name="tearDown" finished-at="2025-03-15T19:57:25 IST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automationBlogSpot.HandlingPaginationTables -->
+      </class> <!-- automationBlogSpot.HandlingDynamicTable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
