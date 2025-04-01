@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automateNow.HandlingSmapleTable">
+      <class name="automateNow.HandlingPaginationTable">
         <methods>
-          <include name="tearDown"/>
+          <include name="allCountries"/>
           <include name="setUp"/>
-          <include name="itemsTotalPrice"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- automateNow.HandlingSmapleTable -->
+      </class> <!-- automateNow.HandlingPaginationTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
