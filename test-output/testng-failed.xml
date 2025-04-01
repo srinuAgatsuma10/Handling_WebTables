@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webDriverUniversity.HandlingMultipleTables">
+      <class name="automateNow.HandlingSmapleTable">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="printDataInConsole"/>
+          <include name="printTable"/>
         </methods>
-      </class> <!-- webDriverUniversity.HandlingMultipleTables -->
+      </class> <!-- automateNow.HandlingSmapleTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

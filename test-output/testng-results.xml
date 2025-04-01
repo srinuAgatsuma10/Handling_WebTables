@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-01T12:04:58 IST" name="Default suite" finished-at="2025-04-01T12:05:10 IST" duration-ms="12219">
+  <suite started-at="2025-04-01T12:20:35 IST" name="Default suite" finished-at="2025-04-01T12:20:44 IST" duration-ms="9357">
     <groups>
     </groups>
-    <test started-at="2025-04-01T12:04:58 IST" name="Default test" finished-at="2025-04-01T12:05:10 IST" duration-ms="12219">
+    <test started-at="2025-04-01T12:20:35 IST" name="Default test" finished-at="2025-04-01T12:20:44 IST" duration-ms="9357">
       <class name="automateNow.HandlingSmapleTable">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automateNow.HandlingSmapleTable@776aec5c]" started-at="2025-04-01T12:04:58 IST" name="setUp" finished-at="2025-04-01T12:05:10 IST" duration-ms="11629" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automateNow.HandlingSmapleTable@776aec5c]" started-at="2025-04-01T12:20:35 IST" name="setUp" finished-at="2025-04-01T12:20:43 IST" duration-ms="8449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="itemsInTable()[pri:0, instance:automateNow.HandlingSmapleTable@776aec5c]" started-at="2025-04-01T12:05:10 IST" name="itemsInTable" finished-at="2025-04-01T12:05:10 IST" duration-ms="162" status="PASS">
+        <test-method signature="printTable()[pri:0, instance:automateNow.HandlingSmapleTable@776aec5c]" started-at="2025-04-01T12:20:43 IST" name="printTable" description="Print whole table in Console." finished-at="2025-04-01T12:20:44 IST" duration-ms="459" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- itemsInTable -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automateNow.HandlingSmapleTable@776aec5c]" started-at="2025-04-01T12:05:10 IST" name="tearDown" finished-at="2025-04-01T12:05:10 IST" duration-ms="356" status="PASS">
+        </test-method> <!-- printTable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automateNow.HandlingSmapleTable@776aec5c]" started-at="2025-04-01T12:20:44 IST" name="tearDown" finished-at="2025-04-01T12:20:44 IST" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
