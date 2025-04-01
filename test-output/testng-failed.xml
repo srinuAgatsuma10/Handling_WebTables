@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="printTable"/>
+          <include name="itemsTotalPrice"/>
         </methods>
       </class> <!-- automateNow.HandlingSmapleTable -->
     </classes>
