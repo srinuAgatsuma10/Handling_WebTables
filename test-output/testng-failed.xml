@@ -5,7 +5,7 @@
     <classes>
       <class name="automateNow.HandlingPaginationTable">
         <methods>
-          <include name="allCountries"/>
+          <include name="contriesWithB"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
