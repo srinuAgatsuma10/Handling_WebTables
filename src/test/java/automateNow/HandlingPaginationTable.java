@@ -22,7 +22,7 @@ public class HandlingPaginationTable {
 	
 	
 	/* In this webpage the page navigator of pagination table is not working may be it's bug. So I've followed
-	 Dropdown approach to read values in single time.*/
+	 Dropdown approach to read values in single time. */
 	
 	WebDriver driver;
 
@@ -69,7 +69,18 @@ public class HandlingPaginationTable {
 
 	@Test
 	public void sumOfTotalPopulation() {
+		// Click On Drop down
+		WebElement myDrp = driver.findElement(By.xpath("//select[@id='dt-length-0']"));
+		Select st = new Select(myDrp);
+		st.selectByVisibleText("25");
 
+		float sum = 0;
+		List<WebElement> population = driver.findElements(By.xpath("//table[@id='tablepress-1']//tbody//tr//td[3]"));
+		for (int i = 2; i < population.size(); i++) {
+			String count = population.get(i).getText();
+			sum = sum + Float.parseFloat(count);
+		}
+		System.out.println("Total population in all countries : " + sum);
 	}
 
 	@AfterClass

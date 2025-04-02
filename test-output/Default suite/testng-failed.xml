@@ -5,8 +5,8 @@
     <classes>
       <class name="automateNow.HandlingPaginationTable">
         <methods>
-          <include name="contriesWithB"/>
           <include name="setUp"/>
+          <include name="sumOfTotalPopulation"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- automateNow.HandlingPaginationTable -->
