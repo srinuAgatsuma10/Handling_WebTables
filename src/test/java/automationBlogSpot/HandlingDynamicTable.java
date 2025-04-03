@@ -80,7 +80,7 @@ public class HandlingDynamicTable {
 		int columnCount = driver.findElements(By.xpath("//table[@id='taskTable']//thead//tr//th")).size();
 		int rowCount = driver.findElements(By.xpath("//table[@id='taskTable']//tbody//tr")).size();
 
-		int fireFoxColIndex = -1;
+		int memorySizeColIndex = -1;
 		String descValue = driver.findElement(By.xpath("//strong[@class='firefox-memory']")).getText();
 
 		// Find the column index for "Memory (MB)"
@@ -88,13 +88,13 @@ public class HandlingDynamicTable {
 			String header = driver.findElement(By.xpath("//table[@id='taskTable']//thead//tr//th[" + i + "]"))
 					.getText();
 			if (header.equals("Memory (MB)")) {
-				fireFoxColIndex = i;
+				memorySizeColIndex = i;
 				break;
 			}
 		}
 
 		// If "Memory (MB)" is not found exit
-		if (fireFoxColIndex == -1) {
+		if (memorySizeColIndex == -1) {
 			System.out.println("Memory (MB) column not found.");
 			return;
 		}
@@ -106,8 +106,8 @@ public class HandlingDynamicTable {
 			if (browserName.equals("Firefox")) {
 				// Get the Firefox memory size value from the correct row and column
 				String memorySize = driver
-						.findElement(
-								By.xpath("//table[@id='taskTable']//tbody//tr[" + j + "]//td[" + fireFoxColIndex + "]"))
+						.findElement(By.xpath(
+								"//table[@id='taskTable']//tbody//tr[" + j + "]//td[" + memorySizeColIndex + "]"))
 						.getText();
 				if (memorySize.equals(descValue)) {
 					System.out.println("Firefox Memory Size: " + memorySize);
@@ -119,12 +119,48 @@ public class HandlingDynamicTable {
 
 	@Test(description = "Network speed of Chrome process")
 	public void chromeNetworkSpeed() {
-		
+		int columnCount = driver.findElements(By.xpath("//table[@id='taskTable']//thead//tr//th")).size();
+		int rowCount = driver.findElements(By.xpath("//table[@id='taskTable']//tbody//tr")).size();
+
+		int networkColIndex = -1;
+		String descValue = driver.findElement(By.xpath("//strong[@class='chrome-network']")).getText();
+
+		// Find the column index for "Network (Mbps)"
+		for (int i = 1; i < columnCount; i++) {
+			String header = driver.findElement(By.xpath("//table[@id='taskTable']//thead//tr//th[" + i + "]"))
+					.getText();
+			if (header.equals("Network (Mbps)")) {
+				networkColIndex = i;
+				break;
+			}
+		}
+
+		// If "Network (Mbps)" is not found exit
+		if (networkColIndex == -1) {
+			System.out.println("Network (Mbps) column not found");
+			return;
+		}
+
+		// Find the row where chrome is present
+		for (int j = 1; j < rowCount; j++) {
+			String chrome = driver.findElement(By.xpath("//table[@id='taskTable']//tbody//tr[" + j + "]//td[1]"))
+					.getText();
+			if (chrome.equals("chrome")) {
+				// Get the Chrome's Network Speed value from the correct row and column
+				String networkSpeed = driver
+						.findElement(
+								By.xpath("//table[@id='taskTable']//tbody//tr[" + j + "]//td[" + networkColIndex + "]"))
+						.getText();
+				if (networkSpeed.endsWith(descValue)) {
+					System.out.println("Network Speed os Chrome : " + networkSpeed);
+					Assert.assertTrue(true);
+				}
+			}
+		}
 	}
 
 	@Test(description = "Disk space of Firefox process")
 	public void firefoxDiscSpace() {
-		
 
 	}
 
