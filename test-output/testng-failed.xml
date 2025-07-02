@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automateNow.HandlingPaginationTable">
+      <class name="tutorialsPoint.Handling_WebTable">
         <methods>
-          <include name="setUp"/>
-          <include name="sumOfTotalPopulation"/>
+          <include name="deleteRecords"/>
+          <include name="printTotalTable"/>
           <include name="tearDown"/>
+          <include name="sumOfSalary"/>
+          <include name="SetUp"/>
         </methods>
-      </class> <!-- automateNow.HandlingPaginationTable -->
+      </class> <!-- tutorialsPoint.Handling_WebTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

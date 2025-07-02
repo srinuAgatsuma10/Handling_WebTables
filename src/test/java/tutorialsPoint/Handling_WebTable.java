@@ -1,0 +1,65 @@
+package tutorialsPoint;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class Handling_WebTable {
+
+	/* Test Cases
+	 * 1) Print total table in console.
+	 * 2) Print sum of the salary.
+	 * 3) Delete all records in table using delete icon.*/
+	
+	WebDriver driver;
+
+	@BeforeClass
+	public void SetUp() {
+		driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.tutorialspoint.com/selenium/practice/webtables.php#");
+		driver.manage().window().maximize();
+	}
+
+	@Test(priority = 1)
+	public void printTotalTable() {
+		int rowCount = driver.findElements(By.xpath("//table[@class='table table-striped mt-3']//tbody//tr")).size();
+		int colCount = driver.findElements(By.xpath("//table[@class='table table-striped mt-3']//thead//tr//th")).size();
+		
+		for(int i=1;i<=colCount;i++) {
+			String tableHeaders = driver.findElement(By.xpath("//table[@class='table table-striped mt-3']//thead//tr//th["+i+"]")).getText();
+			System.out.print(tableHeaders + "\t");
+		}
+		System.out.println();
+		
+		for(int ro = 1;ro<=rowCount;ro++) {
+			for(int co=1;co<=colCount;co++) {
+				String table_Data = driver.findElement(By.xpath("//table[@class='table table-striped mt-3']//tbody//tr["+ro+"]//td["+co+"]")).getText();
+				System.out.print(table_Data + "\t");
+			}
+			System.out.println();
+		}
+		
+	}
+	
+	@Test(priority = 2)
+	public void sumOfSalary() {
+		
+	}
+	
+	@Test(priority = 3)
+	public void deleteRecords() {
+		
+	}
+
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
+}

@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-03T19:52:00 IST" name="Default suite" finished-at="2025-04-03T19:52:09 IST" duration-ms="8068">
+  <suite started-at="2025-07-02T20:45:59 IST" name="Default suite" finished-at="2025-07-02T20:46:05 IST" duration-ms="6317">
     <groups>
     </groups>
-    <test started-at="2025-04-03T19:52:00 IST" name="Default test" finished-at="2025-04-03T19:52:09 IST" duration-ms="8068">
-      <class name="automationBlogSpot.HandlingDynamicTable">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingDynamicTable@443118b0]" started-at="2025-04-03T19:52:00 IST" name="setUp" finished-at="2025-04-03T19:52:08 IST" duration-ms="7322" status="PASS">
+    <test started-at="2025-07-02T20:45:59 IST" name="Default test" finished-at="2025-07-02T20:46:05 IST" duration-ms="6317">
+      <class name="tutorialsPoint.Handling_WebTable">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:tutorialsPoint.Handling_WebTable@6771beb3]" started-at="2025-07-02T20:45:59 IST" name="SetUp" finished-at="2025-07-02T20:46:03 IST" duration-ms="4162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="chromCPULoad()[pri:1, instance:automationBlogSpot.HandlingDynamicTable@443118b0]" started-at="2025-04-03T19:52:08 IST" name="chromCPULoad" description="CPU load of Chrome process" finished-at="2025-04-03T19:52:08 IST" duration-ms="228" status="PASS">
+        </test-method> <!-- SetUp -->
+        <test-method signature="printTotalTable()[pri:1, instance:tutorialsPoint.Handling_WebTable@6771beb3]" started-at="2025-07-02T20:46:03 IST" name="printTotalTable" finished-at="2025-07-02T20:46:05 IST" duration-ms="1665" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chromCPULoad -->
-        <test-method signature="firefoxMemorySize()[pri:2, instance:automationBlogSpot.HandlingDynamicTable@443118b0]" started-at="2025-04-03T19:52:08 IST" name="firefoxMemorySize" description="Memory Size of Firefox process" finished-at="2025-04-03T19:52:08 IST" duration-ms="103" status="PASS">
+        </test-method> <!-- printTotalTable -->
+        <test-method signature="sumOfSalary()[pri:2, instance:tutorialsPoint.Handling_WebTable@6771beb3]" started-at="2025-07-02T20:46:05 IST" name="sumOfSalary" finished-at="2025-07-02T20:46:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firefoxMemorySize -->
-        <test-method signature="chromeNetworkSpeed()[pri:3, instance:automationBlogSpot.HandlingDynamicTable@443118b0]" started-at="2025-04-03T19:52:08 IST" name="chromeNetworkSpeed" description="Network speed of Chrome process" finished-at="2025-04-03T19:52:08 IST" duration-ms="128" status="PASS">
+        </test-method> <!-- sumOfSalary -->
+        <test-method signature="deleteRecords()[pri:3, instance:tutorialsPoint.Handling_WebTable@6771beb3]" started-at="2025-07-02T20:46:05 IST" name="deleteRecords" finished-at="2025-07-02T20:46:05 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chromeNetworkSpeed -->
-        <test-method signature="firefoxDiscSpace()[pri:4, instance:automationBlogSpot.HandlingDynamicTable@443118b0]" started-at="2025-04-03T19:52:08 IST" name="firefoxDiscSpace" description="Disk space of Firefox process" finished-at="2025-04-03T19:52:08 IST" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- firefoxDiscSpace -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingDynamicTable@443118b0]" started-at="2025-04-03T19:52:08 IST" name="tearDown" finished-at="2025-04-03T19:52:09 IST" duration-ms="152" status="PASS">
+        </test-method> <!-- deleteRecords -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsPoint.Handling_WebTable@6771beb3]" started-at="2025-07-02T20:46:05 IST" name="tearDown" finished-at="2025-07-02T20:46:05 IST" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automationBlogSpot.HandlingDynamicTable -->
+      </class> <!-- tutorialsPoint.Handling_WebTable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
