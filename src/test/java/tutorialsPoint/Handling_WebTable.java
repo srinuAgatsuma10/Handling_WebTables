@@ -27,7 +27,7 @@ public class Handling_WebTable {
 		driver.manage().window().maximize();
 	}
 
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void printTotalTable() {
 		int rowCount = driver.findElements(By.xpath("//table[@class='table table-striped mt-3']//tbody//tr")).size();
 		int colCount = driver.findElements(By.xpath("//table[@class='table table-striped mt-3']//thead//tr//th")).size();
@@ -50,10 +50,16 @@ public class Handling_WebTable {
 	
 	@Test(priority = 2)
 	public void sumOfSalary() {
-		
+		int rowCount = driver.findElements(By.xpath("//table[@class='table table-striped mt-3']//tbody//tr")).size();
+		int sum = 0;
+		for(int i = 1;i<=rowCount;i++) {
+			int salary = Integer.parseInt(driver.findElement(By.xpath("//table[@class='table table-striped mt-3']//tbody//tr//td[5]")).getText());
+			sum = sum + salary;
+		}
+		System.out.println(sum);
 	}
 	
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void deleteRecords() {
 		
 	}
